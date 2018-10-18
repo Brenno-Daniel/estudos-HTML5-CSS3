@@ -1,0 +1,22 @@
+/*CRIANDO ANIMAÇÕES*/
+/*CRIANDO OS QUADROS (FRAMES)*/
+@keyframes frames {
+    0% {background-color: rgba(238, 182, 0, 0.356); top:0; left:0;}
+    25% {background-color: rgba(9, 255, 0, 0.623); top:0; left:200;}
+    50% {background-color: cyan; top:200; left:200;}
+    75% {background-color: rgb(40, 3, 245); top:200; left:0;}
+    100% {background-color: rgb(79, 2, 129); top:0; left:0;}
+}
+body{
+    margin: 0;
+}
+#exemplo{
+    width: 200px;
+    height: 200px;
+    background-color: cyan;
+    /*APLICANDO A ANIMAÇÃO*/
+    animation-name: frames;
+    animation-duration: 4s; /*DURAÇÃO DA ANIMAÇÃO*/
+    animation-delay: 2s;/*DELAY DA ANIMAÇÂO*/
+    animation-iteration-count: 2;/*REPETIÇÂO DA ANIMAÇÂO*/
+}

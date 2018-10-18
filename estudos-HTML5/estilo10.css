@@ -1,0 +1,13 @@
+body{
+	background-color: #FFFFFF;
+}
+
+p{
+	height: 200px;
+	text-align: center;
+	color: white;
+	background-color: #333333;
+	transition: height 1s;
+}
+
+p:hover { height: 400px; }

@@ -1,0 +1,19 @@
+body{
+    margin:0;
+}
+#dgd{
+    margin: auto;
+    width: 1040px;
+    height: 100px;
+    background-color: blue; /*CASO O NAVEGADOR NÃO TENHA SUPORTE AO GRADIENTE*/
+    background: linear-gradient(-75deg, white, blue); /*ATIVAÇÃO PADRÃO DO GRADIENTE*/
+    background: -moz-linear-gradiente(-75deg,white, blue);/*ADICIONAR SUPORTE AO NAVEGADOR MOZILLA */
+    background: -o-linear-gradient(-75deg, white, blue);/*ADICIONAR SUPORTE AO OPERA */
+    background: -webkit-linear-gradient(-75deg, white, blue);/*ADICIONAR SUPORTE AO SAFARI */
+
+}
+p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}

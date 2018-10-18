@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+.page-container{
+    display:grid;
+    grid-template-areas: "menu conteudo";
+    grid-template-columns: 300px auto;
+    grid-template-rows: auto auto auto;
+    background-color: #DDD;
+}
+.page-side-left{
+    grid-row: 1/3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-area: menu;
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+    background-color: cyan;
+    background: linear-gradient( #24C6DC, #514A9D);
+    box-shadow: 5px 0px 15px #000;
+}
+.profile-foto img{
+    width: auto;
+    height: 200px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+.linha-profile{
+    color: #ffffff;
+    border: 1px solid;
+}
+.page-content{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column: 2;
+    grid-area: conteudo;
+    padding: 20px;
+}
+/* DEFINIÇÃO RESPONSIVA */
+@media screen and (max-device-width: 800px), screen and (max-width: 800px){
+    .page-container{
+        grid-template-columns: auto;
+        grid-template-areas: "menu"
+                             "conteudo";
+    }
+}
+
+
